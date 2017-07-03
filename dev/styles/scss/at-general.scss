@@ -121,6 +121,9 @@
 	&-dark-grey{
 		background-color: $at-dark-grey;
 	}
+	&-black{
+		background-color: $at-black;
+	}
 }
 // No-gutter add this class to row if no gutters are needed in bootstrap's grid
 .row.no-gutters {
