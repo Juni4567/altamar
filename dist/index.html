@@ -4,217 +4,306 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Website 2 Title</title>
+    <title>Altamar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
-    <script type="text/javascript">
-        var prismGalleryOptions = {
-            gallery: { //thumbnails-gallery.html
-                dots: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 1,
-                rows: 1,
-                lazyLoad: 'ondemand',
-                photoSwipe: false, //If clicking a thumnail should open the bigger image in a lightbox or not
-            },
-            gallery2: { //simple-image-slider.html
-                dots: false,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 4,
-                rows: 2,
-                lazyLoad: 'ondemand',
-                photoSwipe: true,
-            },
-            gallery3: {
-                dots: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 2,
-                rows: 2,
-                lazyLoad: 'ondemand',
-            },
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif" rel="stylesheet">
 </head>
 
 <body>
     
-    <h1>Thumbnails gallery</h1>
-    <div id="thumbnailsGallery">
+    <div class="header-container bg-blue text-white padding-small">
+	<div class="container">
+		<div class="header-body">
+			<div class="at-logo display-inline">
+				<a href="#"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="at-slogan text-white display-inline">
+			NAVIGATING THE HIGH SEAS OF GLOBAL POLITICS
+			<span class="text-fblue" style="color: #7ca7d0">
+				WITH PETER SCHECHTER AND MUNI JENSEN
+			</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header-navigation padding-tiny">
+	<div class="container">
+		<div class="at-navigation nav-left display-inline">
+			<ul class="list-unstyled list-inline no-margin">
+				<li><a class="active" style="font-size: 18px; font-weight: bold;" href="#">HOME</a></li>
+				<li><a href="#" style="font-size: 18px;">ABOUT THE HOSTS</a></li>
+				<li><a href="#" style="font-size: 18px;">LISTEN TO PODCASTS</a></li>
+				<li><a href="#" style="font-size: 18px;">COMENTARY</a></li>
+				<li><a href="#" style="font-size: 18px;">CONTACT</a></li>
+			</ul>
+		</div>
+		<div class="at-social-header display-inline pull-right">
+			<ul class="list-unstyled">
+				<li>
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-gplus"></i></a>
+					<a href="#"><i class="fa fa-search"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+    
+    
+    <div class="section section-hero padding-small">
         <div class="container">
-            <div class="prism-slider gallery">
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/1.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/1.jpg"></a>
-                    </figure>
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="news-slider">
+                        <div class="slider-navigation">
+                            <a href="#" class="icon icon-bordered">
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                            <a href="#" class="icon icon-bordered">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="news-slide-body">
+                            <h2>Trump to China: Thanks for trying with North Korea</h2>
+                            <p>For months, President Donald Trump, Vice President Mike Pence and top aides have staked any progress...</p>
+                            <button class="btn-primary">LISTEN NOW</button>
+                        </div>
+                        <div class="news-slide-img">
+                            <img src="images/trump.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/2.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/2.jpg"></a>
-                    </figure>
-                </div>
-
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/3.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/3.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/4.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/4.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/5.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/5.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/6.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/6.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/7.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/7.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/8.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/8.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/9.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/9.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="../images/slides/10.png" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="../images/slides/10.png"></a>
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="pswp__bg"></div>
-            <div class="pswp__scroll-wrap">
-                <div class="pswp__container">
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                </div>
-                <div class="pswp__ui pswp__ui--hidden">
-                    <div class="pswp__top-bar">
-                        <div class="pswp__counter"></div>
-                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                        <div class="pswp__preloader">
-                            <div class="pswp__preloader__icn">
-                              <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                              </div>
+                <div class="col-sm-3">
+                    <div class="news-hosts">
+                        <div class="row no-gutters">
+                            <div class="col-xs-6">
+                                <img src="images/host1.jpg" alt="Host1">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="images/host2.jpg" alt="Host2">
                             </div>
                         </div>
                     </div>
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                        <div class="pswp__share-tooltip"></div> 
-                    </div>
-                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                    </button>
-                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                    </button>
-                    <div class="pswp__caption">
-                        <div class="pswp__caption__center"></div>
-                    </div>
-                  </div>
-                </div>
-          </div>
-    </div>
-    
-    <h1>Simple Image Slider</h1>
-    <div id="thumbnailsGallery">
-        <div class="container">
-            <div class="prism-slider gallery2">
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/1.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/1.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/2.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/2.jpg"></a>
-                    </figure>
-                </div>
-
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/3.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/3.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/4.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/4.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/5.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/5.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/6.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/6.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/7.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/7.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/8.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/8.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/9.jpg" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/9.jpg"></a>
-                    </figure>
-                </div>
-                <div class="thumb gallery-img prism-thumb" style="" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <a href="images/slides/10.png" class="thumb-url" data-size="1280x993" tabindex="0">
-                        <img alt="Loading..." data-author="Some Note Text" index="2" class="" data-lazy="images/slides/10.png"></a>
-                    </figure>
+                    <h4>About the Hosts</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, veritatis aliquam praesentium tempore magnam dignissimos repellendus rem tempora deleniti rerum ipsum, consectetur sit iusto neque odit exercitationem reiciendis, debitis quas.</p>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="section section-apps padding-tiny bg-blue">
+        <div class="container">
+            <h4 class="display-inline text-white">WHERE TO LISTEN:</h4>
+            <ul class="list-unstyled list-inline display-inline">
+                <li><a href="#"><img src="images/app-icons/itunes.png" alt="itunes"></a></li>
+                <li><a href="#"><img src="images/app-icons/gplay.png" alt="gplay"></a></li>
+                <li><a href="#"><img src="images/app-icons/stitcher.png" alt="stitcher"></a></li>
+                <li><a href="#"><img src="images/app-icons/tunein.png" alt="tunein"></a></li>
+                <li><a href="#"><img src="images/app-icons/soundcloud.png" alt="soundcloud"></a></li>
+                <li><a href="#"><img src="images/app-icons/rss.png" alt="rss"></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section section-list-links padding-medium">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="bordered-container">
+                        <h4>Tweets</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="media">
+                                  <div class="media-left">
+                                    <a href="#">
+                                      <img class="media-object" src="images/newsfeed/news1.jpg" alt="Image">
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Text goes here...</p>
+                                  </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                  <div class="media-left">
+                                    <a href="#">
+                                      <img class="media-object" src="images/newsfeed/news2.jpg" alt="Image">
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Text goes here...</p>
+                                  </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="media">
+                                  <div class="media-left">
+                                    <a href="#">
+                                      <img class="media-object" src="images/newsfeed/news3.jpg" alt="Image">
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Text goes here...</p>
+                                  </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Previous Episodes</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object" src="images/newsfeed/news4.jpg" alt="Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Text goes here...</p>
+                              </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object" src="images/newsfeed/news5.jpg" alt="Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Text goes here...</p>
+                              </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object" src="images/newsfeed/news6.jpg" alt="Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Text goes here...</p>
+                              </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Commentary</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object" src="images/newsfeed/news7.jpg" alt="Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Text goes here...</p>
+                              </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object" src="images/newsfeed/news8.jpg" alt="Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Text goes here...</p>
+                              </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object" src="images/newsfeed/news9.jpg" alt="Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Text goes here...</p>
+                              </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="at-footer padding-medium bg-black text-grey">
+	<div class="container">
+		<div class="newsletter-form">
+			<h3 class="display-inline">Sign Up for Our Newsletter</h3> 
+			<input type="text" placeholder="YOUR NAME">
+			<input type="text" placeholder="YOUR EMAIL">
+			<button class="btn btn-primary">Subsrcibe</button>
+		</div>
+		
+		<div class="row footer-grid">
+			<div class="col-sm-4">
+				<h3>Our Mission</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consequuntur, sint aspernatur rem eveniet distinctio eius eligendi! Alias corporis possimus quae facere dicta dolores, eius tenetur quidem, saepe temporibus autem?</p>
+			</div>
+			<div class="col-sm-2">
+				<h3>Navigation</h3>
+				<ul class="list-unstyled">
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-2">
+				<h3>Navigation</h3>
+				<ul class="list-unstyled">
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+					<li><a href="#">Link Here</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h3>Follow Us</h3>
+				<ul class="footer-social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-gplus"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-lower">
+			<div class="pull-left">© 2017 ALTAMAR. All Rights Reserved.</div>
+			<div class="pull-right"><a href="#">Terms of Use</a>  |  <a href="#">Privacy & Security Statement</a></div>
+		</div>
+	</div>
+</div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="scripts/scripts.js"></script>
