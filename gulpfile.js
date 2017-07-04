@@ -154,7 +154,7 @@ gulp.task('styles-deploy', function() {
 //basically just keeping an eye on all HTML files
 gulp.task('html', function() {
     //watch any and all HTML files and refresh when something changes
-    return gulp.src('dev/html/index.html')
+    return gulp.src('dev/html/**/*')
         .pipe(fileinclude({
           prefix: '@@',
           basepath: '@file'
@@ -219,10 +219,10 @@ gulp.task('scaffold', function() {
 //  compress all scripts and SCSS files
 gulp.task('default', ['browserSync', 'scripts', 'styles'], function() {
     //a list of watchers, so it will watch all of the following files waiting for changes
-    gulp.watch('dev/scripts/**', ['scripts']);
-    gulp.watch('dev/styles/*/**', ['styles']);
-    gulp.watch('dev/images/**', ['images']);
-    gulp.watch('dev/html/*/**.html', ['html']);
+    gulp.watch('dev/scripts/**/*', ['scripts']);
+    gulp.watch('dev/styles/**/*', ['styles']);
+    gulp.watch('dev/images/**/*', ['images']);
+    gulp.watch('dev/html/**/*.html', ['html']);
 });
 
 //this is our deployment task, it will set everything for deployment-ready files
