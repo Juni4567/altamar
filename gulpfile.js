@@ -1,5 +1,5 @@
 //initialize all of our variables
-var app, base, concat, directory, gulp, gutil, hostname, path, refresh, sass, uglify, imagemin, minifyCSS, del, browserSync, autoprefixer, gulpSequence, shell, sourceMaps, plumber;
+var app, base, concat, directory, gulp, gutil, hostname, path, refresh, sass, uglify, imagemin, cleanCSS, del, browserSync, autoprefixer, gulpSequence, shell, sourceMaps, plumber;
 
 var autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
 
@@ -14,7 +14,7 @@ sass        = require('gulp-sass');
 sourceMaps  = require('gulp-sourcemaps');
 imagemin    = require('gulp-imagemin');
 imageminSvgo = require('imagemin-svgo');
-minifyCSS   = require('gulp-minify-css');
+cleanCSS   = require('gulp-clean-css');
 browserSync = require('browser-sync');
 autoprefixer = require('gulp-autoprefixer');
 gulpSequence = require('gulp-sequence').use(gulp);
@@ -144,7 +144,7 @@ gulp.task('styles-deploy', function() {
                 }))
                 //the final filename of our combined css file
                 .pipe(concat('styles.css'))
-                .pipe(minifyCSS())
+                .pipe(cleanCSS())
                 //where to save our final, compressed css file
                 .pipe(gulp.dest('dist/styles'))
                 .pipe(concat('prism-gallery-public.css'))
@@ -220,7 +220,7 @@ gulp.task('scaffold', function() {
 gulp.task('default', ['browserSync', 'scripts', 'styles'], function() {
     //a list of watchers, so it will watch all of the following files waiting for changes
     gulp.watch('dev/scripts/**/*', ['scripts']);
-    gulp.watch('dev/styles/**/*', ['styles']);
+    gulp.watch('dev/styles/scss/**/*', ['styles']);
     gulp.watch('dev/images/**/*', ['images']);
     gulp.watch('dev/html/**/*.html', ['html']);
 });

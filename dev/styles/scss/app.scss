@@ -1,5 +1,6 @@
 // ============ Frameworks ============
 //Import bootstrap sass main
+@import 'at-variables';
 @import 'bootstrap/_bootstrap';
 
 
@@ -8,6 +9,5 @@
 
 
 // ============ Custom ============
-@import 'at-variables';
 @import 'at-general';
 @import 'altamar-styles';
