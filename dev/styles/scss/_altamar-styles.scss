@@ -5,8 +5,28 @@
 .header-navigation{
 	border-bottom: 1px solid $at-grey;
 }
+.header-social-mobile{
+	padding: 25px 0;
+	@media screen and (max-width: 767px){
+		.list-inline > li{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.fa{
+		color: $at-white !important;
+		font-size: 20px;
+	}
+}
 .at-logo{
 	margin-right: 30px;
+}
+.breadcrumb{
+	margin-left: 15px;
+	margin-right: 15px;
+	@media screen and (min-width: 767px){
+		display: none;
+	}
 }
 .at-slogan{
 	vertical-align: middle;
@@ -48,6 +68,7 @@
 }
 
 .fa{
+	color: $at-light-blue;
 	&-facebook{
 		color: #3b5999;
 	}
@@ -68,6 +89,9 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+	@media screen and (max-width: 767px){
+		display: none;
+	}
 }
 .news-slide-img{
 	top: 0;
@@ -75,13 +99,59 @@
 	right: 0;
 	bottom: 0;
 	z-index: -1;
+	background: #000;
+	position: absolute;
+	@media screen and (max-width: 767px){
+		position: absolute;
+	}
+
+	img{
+		height: 100%;
+		object-fit: contain;
+		object-position: right bottom;
+		@media screen and (max-width: 767px){
+			object-fit: cover;
+			object-position: right;
+		}
+	}
+}
+
+.section{
+	&-hero{
+		@media screen and (max-width: 767px){
+			padding: 0;
+		}
+	}
+	&-apps{
+		@media screen and (max-width: 767px){
+			text-align: center;
+			margin-top: 20px;
+		}
+		li{
+			@media screen and (max-width: 767px){
+				padding: 10px;
+			}	
+		}
+	}
 }
 .news-slide-body{
 	bottom: 0;
-    position: absolute;
+    position: relative;
     left: 0;
     max-width: 60%;
     padding: 30px 20px;
+    padding-top: 135px;
+    @media screen and (max-width: 767px){
+    	position: relative;
+    	background: rgba(0, 0, 0, 0.69);
+    	text-align: center;
+    	max-width: 100%;
+    }
+    p{
+    	@media screen and (max-width: 767px){
+    		display: none;
+    	}
+    }
 }
 
 .icon{
@@ -101,11 +171,20 @@
 .bordered-container{
 	border: 1px solid $at-grey;
 	padding: 0 20px;
+
+	@media screen and(max-width: 767px){
+		margin: 20px auto;
+	}
 }
 .news-hosts{
 	margin-right: -20px;
 	margin-left: -20px;
-
+	@media screen and (max-width: 767px){
+		text-align: center;
+	}
+	.host-avatar{
+		width: 100%;
+	}
 	> div > div {
 	    border-right: 2px solid #fff;
 	    &:last-of-type{
@@ -117,6 +196,9 @@
 
 
 .at-footer{
+	@media screen and(max-width: 767px){
+		text-align: center;
+	}
 	a{
 		color: #a1a1a1;
 	}
@@ -128,6 +210,12 @@
 	    padding: 20px;
 	    &.btn{
 	    	padding: 0;
+	    	@media screen and (max-width: 767px){
+	    		margin-top: 0;
+	    	}
+	    }
+	    @media screen and (max-width: 767px){
+	    	margin: 10px auto;
 	    }
 	}
 }
@@ -136,5 +224,17 @@
 	color: #555555;
 	a{
 		color: #555555;
+	}
+	.footer-left{
+		float: left;
+		@media screen and (max-width: 767px){
+			float: none;
+		}
+	}
+	.footer-right{
+		float: right;
+		@media screen and (max-width: 767px){
+			float: none;
+		}
 	}
 }
