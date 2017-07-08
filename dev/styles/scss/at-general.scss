@@ -136,9 +136,17 @@
     }
 }
 
-.full-width{
-	width: 100%;
-}
+.full{
+	&-width{
+		width: 100%;
+	}
+	&-height{
+		height: 100%;
+	}
+	&-vh-height{
+		height: 100vh;
+	}
+	}
 
 
 // Center elements with flex
@@ -160,6 +168,21 @@
 		align-items: flex-end;
 	}
 }
+
+.tabular-center{
+	display: table;
+	position: absolute;
+	margin: 0 auto;
+	>div{
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+
+		margin-left: auto;
+		margin-right: auto; 
+	}
+}
+
 
 
 
