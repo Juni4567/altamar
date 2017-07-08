@@ -361,3 +361,46 @@
 		max-width: 100%;
 	}
 }
+
+
+
+
+// About page styles
+.user-about-content{
+	@media screen and (max-width: 767px){
+		display: block;
+	}
+	.user-about-text{
+	    height: 100%;
+	    background: #fff;
+	    margin-left: -50px;
+	    padding: 50px;
+	    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.1);
+	    position: relative;
+	    z-index: 20;
+
+	    @media screen and (max-width: 767px){
+	    	margin: 0;
+	    	padding: 0;
+	    	box-shadow: none;
+	    }
+	}
+	
+
+	&.right-to-left{
+		.user-about-text{
+		    margin-right: -50px;
+		    margin-left: 0;
+		}
+	}
+}
+
+.at-quote{
+	padding: 0 250px;
+	font-weight: bold;
+	font-style: italic;
+
+	@media screen and (max-width: 767px){
+		padding: 0;
+	}
+}
